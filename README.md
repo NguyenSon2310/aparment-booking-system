@@ -53,7 +53,7 @@ database: 'postgres',
 ./apartmentBookingSystem.postman_collection.json
 ```
 
-##Step to booking rooms
+## Step to booking rooms
 <ol>
   <li>Import Postman Export File</li>
   <li>Login (by POST login API)</li>
