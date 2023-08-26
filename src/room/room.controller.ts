@@ -1,4 +1,13 @@
-import { Controller, Get, Query, HttpStatus, HttpCode, UseGuards, Body, Post } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Query,
+  HttpStatus,
+  HttpCode,
+  UseGuards,
+  Body,
+  Post,
+} from '@nestjs/common';
 import { RoomService } from './room.service';
 import { ReservationService } from 'src/reservation/reservation.service';
 import { GetAvailableRoomDto } from 'src/reservation/dto/get-available-room.dto';
@@ -10,8 +19,8 @@ import { User } from 'src/users/users.entity';
 export class RoomController {
   constructor(
     private readonly roomService: RoomService,
-    private readonly reservationService: ReservationService
-  ) { }
+    private readonly reservationService: ReservationService,
+  ) {}
 
   @UseGuards(AuthGuard)
   @HttpCode(HttpStatus.OK)
@@ -29,6 +38,11 @@ export class RoomController {
     @Body('roomIds') roomId: number[],
     @GetUser() user: User,
   ) {
-    return this.reservationService.addVehicleReservation(startTime, endTime, roomId, user.id);
+    return this.reservationService.addVehicleReservation(
+      startTime,
+      endTime,
+      roomId,
+      user.id,
+    );
   }
 }

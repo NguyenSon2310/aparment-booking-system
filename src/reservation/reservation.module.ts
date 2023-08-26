@@ -9,4 +9,4 @@ import { Room } from 'src/room/room.entity';
   providers: [ReservationService],
   exports: [ReservationService],
 })
-export class ReservationModule { }
+export class ReservationModule {}

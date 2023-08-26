@@ -27,4 +27,4 @@ import { SnakeNamingStrategy } from 'typeorm-naming-strategies';
   controllers: [],
   providers: [],
 })
-export class AppModule { }
+export class AppModule {}

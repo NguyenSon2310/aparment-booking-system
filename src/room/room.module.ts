@@ -8,4 +8,4 @@ import { ReservationModule } from 'src/reservation/reservation.module';
   controllers: [RoomController],
   providers: [RoomService],
 })
-export class RoomModule { }
+export class RoomModule {}
