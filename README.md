@@ -34,7 +34,7 @@ $ docker compose up --build
 
 ## PgAdmin4
 ```
-Access pgAdmin4: [http://localhost:5050](http://localhost:5050)
+Access pgAdmin4: <http://localhost:5050>
 username: admin@admin.com
 password: pgadmin4
 ```
