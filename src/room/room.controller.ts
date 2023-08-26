@@ -38,7 +38,7 @@ export class RoomController {
     @Body('roomIds') roomId: number[],
     @GetUser() user: User,
   ) {
-    return this.reservationService.addVehicleReservation(
+    return this.reservationService.addReservation(
       startTime,
       endTime,
       roomId,

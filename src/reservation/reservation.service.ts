@@ -49,7 +49,7 @@ export class ReservationService {
     return rooms;
   }
 
-  async addVehicleReservation(
+  async addReservation(
     startTime: Date,
     endTime: Date,
     roomIds: number[],
