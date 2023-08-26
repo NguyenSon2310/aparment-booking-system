@@ -16,7 +16,7 @@ export class RoomController {
   @UseGuards(AuthGuard)
   @HttpCode(HttpStatus.OK)
   @Get('available')
-  signIn(@Query() getAvailableRoomDto: GetAvailableRoomDto) {
+  getAvailable(@Query() getAvailableRoomDto: GetAvailableRoomDto) {
     return this.reservationService.getAvailableRoom(getAvailableRoomDto);
   }
 
